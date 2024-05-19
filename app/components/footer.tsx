@@ -1,3 +1,7 @@
+import Image from "next/image";
+import Github from "../assets/svg/github.svg";
+import Linkedin from "../assets/svg/linkedin.svg";
+
 function ArrowIcon() {
   return (
     <svg
@@ -26,7 +30,7 @@ export default function Footer() {
             target="_blank"
             href="https://www.linkedin.com/in/adriano-martins-de-oliveira-sousa-330026b9"
           >
-            <ArrowIcon />
+            <Image alt="" src={Linkedin} />
             <p className="ml-2 h-7">Linkedin</p>
           </a>
         </li>
@@ -37,7 +41,7 @@ export default function Footer() {
             target="_blank"
             href="https://github.com/adrianomartins002"
           >
-            <ArrowIcon />
+            <Image src={Github} alt=""/>
             <p className="ml-2 h-7">github</p>
           </a>
         </li>
